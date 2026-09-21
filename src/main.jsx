@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import {
-  BrowserRouter,
+  HashRouter,
   useNavigate,
   useLocation,
   Routes,
@@ -1454,11 +1454,11 @@ createRoot(document.getElementById('root')).render(
 
     <AuthProvider>
 
-      <BrowserRouter>
+      <HashRouter>
 
         <App />
 
-      </BrowserRouter>
+      </HashRouter>
 
     </AuthProvider>
 
