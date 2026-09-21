@@ -930,81 +930,14 @@ function Explore() {
 ========================================================= */
 
 function Destination() {
-
   const location = useLocation();
 
-  const destination =
-    location.pathname.split('/').pop() || 'madurai';
-
-  const formatted =
-    destination.charAt(0).toUpperCase() +
-    destination.slice(1);
+  const destinationId =
+    location.pathname.split("/").pop() || "madurai";
 
   return (
     <div className="page">
-
-      <section className="destination-detail">
-
-        <div className="destination-hero">
-
-          <div>
-            <span className="eyebrow">
-              <MapPin size={15} />
-              Destination Guide
-            </span>
-
-            <h1>{formatted}</h1>
-
-            <p>
-              Explore places, local transport, experiences
-              and practical travel information.
-            </p>
-
-            <Link
-              to="/plan"
-              className="primary-button"
-            >
-              Plan Journey
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-
-        </div>
-
-
-        <div className="detail-grid">
-
-          <div className="detail-card">
-            <Sparkles size={22} />
-            <h3>Things to experience</h3>
-            <p>
-              Discover cultural landmarks, local food,
-              attractions and unique experiences.
-            </p>
-          </div>
-
-          <div className="detail-card">
-            <Navigation size={22} />
-            <h3>Local mobility</h3>
-            <p>
-              Find practical ways to move around after
-              reaching your destination.
-            </p>
-          </div>
-
-          <div className="detail-card">
-            <CalendarDays size={22} />
-            <h3>Best time</h3>
-            <p>
-              Plan your visit around weather, crowds and
-              your preferred travel style.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
+      <TouristGuide destinationId={destinationId} />
     </div>
   );
 }
