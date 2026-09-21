@@ -609,10 +609,6 @@
     grid-template-columns: 1fr;
   }
 
-  .auth-heading h2 {
-    font-size: 24px;
-  }
-}  /* ← ADD THIS */
 
  /* =========================================================
     YATRA AI MAIN APPLICATION
