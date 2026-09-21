@@ -12,6 +12,7 @@ import {
   Navigate
 } from 'react-router-dom';
 
+import TouristGuide from "./components/TouristGuide";
 import {
   Compass,
   Sparkles,
