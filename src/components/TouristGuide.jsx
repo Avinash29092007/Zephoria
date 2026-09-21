@@ -20,6 +20,8 @@ import {
 
 import destinationData from "../data/destinationData";
 
+import "./TouristGuide.css";
+
 function formatCurrency(value) {
   return new Intl.NumberFormat("en-IN", {
     style: "currency",
